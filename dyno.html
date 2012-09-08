@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+<meta charset="utf-8" />
+<title></title>
+<style type="text/css">
+
+</style>
+<script src="dyno.js"></script>
+<script type="text/javascript">
+dyno.load("http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", function() {
+
+/*console.log(dyno.backgroundSize);
+console.log(dyno.support('background-size'));
+console.log(dyno.inputAttrs.width);
+console.log(dyno.inputAttrs.autofocus);
+console.log(dyno.inputTypes);
+*/
+
+var x;
+for (x in dyno.feature) { 
+  if (dyno.feature.hasOwnProperty(x) && dyno.feature[x]() === true) {
+    console.log(x);
+  }
+}
+
+
+});
+</script>
+</head>
+<body>
+
+
+
+
+
+
+</body>
+</html>
