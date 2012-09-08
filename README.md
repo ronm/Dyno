@@ -124,6 +124,8 @@ To be added
 * webgl
 
 
+### Font Face
+
 	var isFontFaceSupported = (function(){  
 		var sheet, 
 			doc = document, 
